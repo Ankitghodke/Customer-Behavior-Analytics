@@ -1,9 +1,9 @@
-# Customer Behavior Analytics — End-to-End Cloud Data Pipeline
+# 🛍️ Customer Behavior Analytics — End-to-End Cloud Data Pipeline
 Python · Neon PostgreSQL · SQL · Power BI
 
 ---
 
-## Overview
+## 📌 Overview
 
 Most customer analytics projects stop at the spreadsheet. This one goes further — raw data gets cleaned in Python, loaded into a cloud PostgreSQL database, queried with 10 business intelligence queries, and visualized in an interactive Power BI dashboard.
 
@@ -18,7 +18,7 @@ The dataset covers 3,900 customer records across 25 products, 4 categories, and 
 
 ---
 
-## How it works
+## 🏗️ How it works
 ```
 Raw Dataset (3,900 records | 18 features)
         ↓
@@ -33,7 +33,7 @@ Power BI (Interactive Dashboard)
 
 ---
 
-## Dataset
+## 📊 Dataset
 
 | Metric | Value |
 |--------|-------|
@@ -51,14 +51,14 @@ Power BI (Interactive Dashboard)
 
 ---
 
-## Pipeline
+## ⚙️ Pipeline
 
-**1. Data engineering & ETL (Python)**
+**🔹 1. Data engineering & ETL (Python)**
 - Handled missing values and standardized schema for SQL ingestion
 - Prepared dataset for relational cloud storage
 - Connected Google Colab directly to Neon Serverless PostgreSQL — no local server required
 
-**2. Cloud data warehousing (SQL)**
+**🔹 2. Cloud data warehousing (SQL)**
 
 10 business questions answered on the cloud-hosted database:
 
@@ -75,7 +75,7 @@ Power BI (Interactive Dashboard)
 | Repeat buyer subscription | WHERE + GROUP BY | 89.1% of customers are repeat buyers |
 | Revenue by age group | GROUP BY + SUM | Age-based revenue distribution mapped |
 
-**3. Business intelligence (Power BI)**
+**🔹 3. Business intelligence (Power BI)**
 
 Connected Neon Cloud DB directly to Power BI:
 - Executive KPIs: total revenue, avg rating, subscription rate, avg purchase
@@ -83,7 +83,7 @@ Connected Neon Cloud DB directly to Power BI:
 
 ---
 
-## Key findings
+## 📈 Key findings
 
 | Finding | Numbers | Note |
 |---------|---------|------|
@@ -97,7 +97,7 @@ Connected Neon Cloud DB directly to Power BI:
 
 ---
 
-## File structure
+## 📂 File structure
 ```
 Customer-Behavior-Analytics/
 ├── customer_behavior.ipynb
@@ -109,7 +109,7 @@ Customer-Behavior-Analytics/
 
 ---
 
-## How to run
+## 🚀 How to run
 
 1. Run `customer_behavior.ipynb` to walk through the ETL process and Neon PostgreSQL connection
 2. Import `customer_behavior.sql` into any PostgreSQL environment to run the queries
@@ -117,16 +117,16 @@ Customer-Behavior-Analytics/
 
 ---
 
-## Dashboard preview
+## 📸 Dashboard preview
 
 ![Dashboard](Customer_Shopping_Behavior_Dashboard.PNG)
 
 ---
 
-## Conclusions
+## 🎯 Conclusions
 
 The repeat buyer rate (89.1%) is the number that stands out most. Nearly 9 in 10 customers came back, which means the retention side of the business is solid. The problem is monetization — 73.1% of revenue comes from non-subscribers, which suggests the subscription offering isn't compelling enough to convert people who are already loyal.
 
 The gender revenue gap is also worth noting. Male customers generated $157,890 against $75,191 from female customers. That's not necessarily a targeting failure — it could reflect product mix — but Clothing already drives 44.7% of revenue, which skews things.
 
-The shipping finding is small but interesting. Express and Standard shipping differ by just $2.02 in average purchase value. Customers who pay for faster shipping aren't spending more; they just want the order sooner.
+The shipping finding is small but interesting. Express and Standard shipping differ by just $2.02 in average purchase value. Customers who pay for faster shipping aren't spending more, they just want the order sooner.
