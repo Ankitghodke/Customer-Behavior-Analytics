@@ -102,9 +102,9 @@ Connected Neon Cloud DB directly to Power BI:
 Customer-Behavior-Analytics/
 ├── customer_behavior.ipynb
 ├── customer_behavior.sql
-├── customer_behavior_dashboard.pbix
+├── customer_behavior_dashboard1.pbix
 ├── customer_shopping_behavior.csv
-└── customer_behavior_dash.png
+└── Customer_Shopping_Behavior_Dashboard.png
 ```
 
 ---
